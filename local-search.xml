@@ -4,13 +4,27 @@
   
   
   <entry>
-    <title></title>
+    <title>pat英语单词</title>
     <link href="/2020/11/02/PAT%20%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/"/>
     <url>/2020/11/02/PAT%20%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/</url>
     
     <content type="html"><![CDATA[<h3 id="PAT-英语单词"><a href="#PAT-英语单词" class="headerlink" title="PAT 英语单词"></a>PAT 英语单词</h3><p>polynomials  多项式</p><p>exponents 指数</p><p>coefficients 系数</p><p>denote 标志v</p><p>specified 明确</p><p>assume 假设</p><p>column row 列 行</p><p>configuration 形状</p><p>represented 代表</p><p>ascending order 上升排序</p><p>consistent 恒定的</p><p>distinct 确定的</p><p>corresponding 相应的</p><p>vertical 垂直的</p><p>description 类型</p><p>Palindromic 回文</p><p>decimal 十进制</p><p>notation 符号</p><p>capital letter、majuscule 大小写</p><p>common 对应的，两个比较（夏洛克）</p><p>accurate 准确的</p><p>chronological 时间顺序的</p><p>generate 生成</p><p>rows 一排</p><p>ascending 升序</p><p>vertices 角顶</p><p>proper 正确的</p><p>Quadratic probing 平方散列</p><p>记得把书上所有的名词看一下</p><p>radix 进制</p><p>median 中间值</p><p>consecutive 连贯的</p><p>Factors 因子</p><p>permutation 排列</p><p> lexicographically 字典序</p><p>descendant 子孙</p><p>postorder后序</p><p>inorder中序</p><p>preorder前序</p><p>levelorder层序</p><p> acyclic 无环的</p><p>even 偶数odd奇数</p><p>clique 互联图</p><p>siblings 兄妹</p>]]></content>
     
     
+    <categories>
+      
+      <category>学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>pat</tag>
+      
+      <tag>英语</tag>
+      
+    </tags>
     
   </entry>
   
