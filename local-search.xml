@@ -42,12 +42,16 @@
       
       <category>考研</category>
       
+      <category>数学</category>
+      
     </categories>
     
     
     <tags>
       
-      <tag>考研，数学</tag>
+      <tag>考研</tag>
+      
+      <tag>数学</tag>
       
     </tags>
     
@@ -66,6 +70,8 @@
     <categories>
       
       <category>学习</category>
+      
+      <category>Mark Down</category>
       
     </categories>
     
