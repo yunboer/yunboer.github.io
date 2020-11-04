@@ -1748,3 +1748,6 @@ post-content strong {
     margin-left: 1rem;
   }
 }
+.vsys {
+  display: none !important;
+}
