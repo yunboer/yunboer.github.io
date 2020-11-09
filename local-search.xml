@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>考研数学一笔记整理---线代篇</title>
+    <link href="/2020/11/09/2020-11-09-%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E4%B8%80%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86---%E7%BA%BF%E4%BB%A3%E7%AF%87/"/>
+    <url>/2020/11/09/2020-11-09-%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E4%B8%80%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86---%E7%BA%BF%E4%BB%A3%E7%AF%87/</url>
+    
+    <content type="html"><![CDATA[<h1 id="考研数学一笔记整理—线代篇"><a href="#考研数学一笔记整理—线代篇" class="headerlink" title="考研数学一笔记整理—线代篇"></a>考研数学一笔记整理—线代篇</h1><p><em>食用方式：快速回顾全书的所有基础知识内容，回顾不起来的内容看书。</em></p><p><em>和高数不同，知识点较散</em></p><p><em>参考图书：李永乐线代讲义</em></p><h2 id="第一章-行列式"><a href="#第一章-行列式" class="headerlink" title="第一章 行列式"></a>第一章 行列式</h2><ol><li>行列式定义（逆序数）</li><li>余子式Mij和代数余子式Aij</li><li>按行展开</li><li>不同行和代数余子式的乘积和为0</li><li>主对角阵公式，副对角阵公式</li><li>主对角阵，副对角阵拉普拉斯公式</li><li>范德蒙行列式</li><li>特征多项式的各个系数</li><li>AT，kA，AB，A*，A-1的行列式</li><li>行列式等于特征值乘积</li><li>相似的矩阵行列式相等</li><li>克拉默法则（满秩方程组的解为Di/D）Di是换对应列的矩阵的行列式</li><li>计算方法（第一行的k倍加到各行，各行加到某一行，逐行相加）</li><li>|A+B|（行列式按行拆分为求和，矩阵的运算性质，不可分的用乘E的方式，特征值相似的使用）</li><li>解特征多项式（拉普拉斯，提出带有λ的式子）</li><li>AB=O（B为A的解，r(A)+r(B)&lt;=n）</li></ol><h2 id="第二章-矩阵"><a href="#第二章-矩阵" class="headerlink" title="第二章 矩阵"></a>第二章 矩阵</h2><ol><li>矩阵的概念m*n</li><li>A（BC）=（AB）C</li><li>AB=O（B为A的解，r(A)+r(B)&lt;=n）</li><li>AT，A*，A-1定义</li><li>初等变换（3种），初等矩阵，乘初等矩阵就是在行列变换（左行右列）。</li><li>A≌B等价就是两个矩阵可通过初等变换</li><li>阶梯矩阵，最简矩阵（特殊的阶梯矩阵，唯一）</li><li>正交矩阵ATA=E（行列长均为1，并且两两正交）</li><li>可逆=|A|不为0=r(A)为n=A向量之间线性无关=A可写成初等矩阵的乘积=A与单位阵等价=0不是特征值</li><li>变换后秩不变</li><li>转置（AT，A+B，kA，AB）</li><li>可逆（A-1，kA，AB，A^n，AT，|A-1|，A-1=A*/|A|）</li><li>伴随（AA*<strong><strong>=|A|E，A****<em>=|A|A-1，|A</em></strong></strong>|=|A|^n-1，A-1，r(A*****)=n,1,0）</li><li>秩（AT，ATA，kA，A+B，AB，若A可逆则r(AB)，AB=O则r(A)+r(b)&lt;=n，拉普拉斯对角的秩等于两个对角的秩的和，相似秩相等，相似且加kE的矩阵秩也相等）</li><li>分块矩阵（加，乘，转置，对角的n次方，对角和副对角的-1）</li><li>求逆（伴随，行变换）</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>考研</category>
+      
+      <category>数学</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>考研</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>感受压力</title>
     <link href="/2020/11/09/2020-11-09-%E6%84%9F%E5%8F%97%E7%94%9F%E6%B4%BB/"/>
     <url>/2020/11/09/2020-11-09-%E6%84%9F%E5%8F%97%E7%94%9F%E6%B4%BB/</url>
