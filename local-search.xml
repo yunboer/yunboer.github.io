@@ -4,6 +4,89 @@
   
   
   <entry>
+    <title>凤梨罐头</title>
+    <link href="/2020/12/03/---%E8%AF%B7%E9%97%AE%E6%9C%89%E6%B2%A1%E6%9C%895%E6%9C%881%E5%8F%B7%E5%88%B0%E6%9C%9F%E7%9A%84%E5%87%A4%E6%A2%A8%E7%BD%90%E5%A4%B4%EF%BC%9F/"/>
+    <url>/2020/12/03/---%E8%AF%B7%E9%97%AE%E6%9C%89%E6%B2%A1%E6%9C%895%E6%9C%881%E5%8F%B7%E5%88%B0%E6%9C%9F%E7%9A%84%E5%87%A4%E6%A2%A8%E7%BD%90%E5%A4%B4%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<h1 id="凤梨罐头"><a href="#凤梨罐头" class="headerlink" title="凤梨罐头"></a>凤梨罐头</h1><p>—请问有没有5月1号到期的凤梨罐头？</p><p>—今天几号了？</p><p>—4月30啊</p><p>—是啊，过期的东西我们不会摆出来的</p><p>—还有两个钟头，这么早就收掉了？</p><p>—过期的东西没人要的，人家要买也要买新鲜的</p><p>—新鲜新鲜，什么新鲜啊？</p><p>就是你这种人！喜新厌旧！</p><p>喂，弄一罐凤梨罐头要花多少心思，你知道吗？</p><p>又要种，又要摘，又要切，你说不要就不要啊？<br>你有没有想过罐头的感受啊？</p><p>—先生，我只是打工仔，我只负责买东西的</p><p>你叫我去想罐头的感受？你有没有想过我的感受啊？</p><p>又要抬，又要搬，还要负责扔。</p><p>我也希望那些罐头永远不过期，我还剩功夫呢。</p><p>你那么爱过期罐头是吗？</p><p>我这里有一箱，全送给你，不收你钱！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>日记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="/2020/12/01/2020-12-01-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <url>/2020/12/01/2020-12-01-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><p><em>食用方式：快速回顾ds所有知识点。</em></p><p><em>参考课程：王道数据结构</em></p><h2 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h2><ol><li>概念（数据，数据对象，数据元素，数据项）</li><li>类型（原子类型，结构类型，抽象数据类型）</li><li>三要素（逻辑结构，物理结构，数据运算）</li><li>逻辑结构（集合，线性，树形，图）</li><li>物理结构（顺序，链式，索引，散列）</li><li>算法要素（有穷，确定，可行，输入，输出）</li><li>好的特性（正确，可读，健壮，高效率低存储）</li><li>时间复杂度，空间复杂度</li><li>p=(elemtype * )malloc(sizeof(elemtype) * n)</li></ol><h2 id="第二章-线性表"><a href="#第二章-线性表" class="headerlink" title="第二章 线性表"></a>第二章 线性表</h2><ol><li><p>线性表（逻辑结构）从1开始</p></li><li><p>操作（创销增删改查）</p></li><li><p>顺序表（存储结构），（静态struct{data[];length}，动态struct{*data;MaxSize;length}）</p></li><li><p>顺序表操作（插入（此次后移+插入，表满或者不在范围内返回false，O(n)），删除（删除+依次前移，如果删除的部分不在范围内返回false，O(n)），查（按位O(1)，按内容O(n)））</p></li><li><p>单链表（存储结构）（带头，不带头，typedef struct LNode｛elemtype data;LNode * next｝LNode, * LinkList;）</p></li><li><p>单链表操作（插入（顺序查找+插入，O(n)），删除（顺序查找+删除，O(n)），查（顺序查，查找不到返回NULL，O(n)），建（尾插法O(1)，头插法O(1)））</p></li><li><p>双链表（存储结构））（typedef struct DNode{elemtype data;DNode * next, * prior}DNode, * DLinkList）</p></li><li><p>双链表操作（插入O(n)，删除O(n)，遍历O(n)）</p></li><li><p>循环单链表（存储结构）定义和单链表一样，* p指向尾更好</p></li><li><p>循环双链表（存储结构）</p></li><li><p>静态链表（存储结构）用-1表示NULL（typedef struct LNode{elemtype data}LinkList[MaxSize];）</p></li><li><table><thead><tr><th align="center">功能</th><th align="center">顺序</th><th align="center">链式</th></tr></thead><tbody><tr><td align="center">扩容</td><td align="center">差</td><td align="center">优</td></tr><tr><td align="center">增删</td><td align="center">差</td><td align="center">优</td></tr><tr><td align="center">查</td><td align="center">优</td><td align="center">差</td></tr></tbody></table></li><li><p>用于递归</p></li></ol><h2 id="第三章-栈和队列"><a href="#第三章-栈和队列" class="headerlink" title="第三章 栈和队列"></a>第三章 栈和队列</h2><ol><li>栈（逻辑结构）特殊的线性表</li><li>操作（创销增删改查）</li><li>顺序栈（存储结构）（struct Stack{elemtype data[]; int top}）初始top=0或者top=-1</li><li>链栈（存储结构）（头插+头删）（struct LinkNode{elemtype data;LinkNode * next};）</li><li>括号匹配问题（左括号入，右括号出）</li><li>表达式求值（手算中转后，手算后缀表达式，机算后缀表达式（数入，操作符出二入一），机算前缀（同上，从右往左），机算中转后（数入式，号入栈弹出高级或同级），中缀机算（双栈，两个合起来））</li><li>队列（逻辑结构）特殊的线性表，尾入头出</li><li>操作（创销增删改查）</li><li>顺序队列/循环队列（存储结构）（struct queue{elemtype data[MaxSize];int front,rear;};）（判定满，牺牲一位，加入size，加入tag（上次插1，上次删0））</li><li>链式队列（存储结构）（struct LinkNode{elemtype data;LinkNode * front, * rear;}; struct LinkQueue{LinkNode * front, * rear;}LinkQueue）（带头空时都指向头，不带头空时都指NULL）</li><li>双端队列，输入受限，输出受限（逻辑结构）</li><li>用于bfs</li><li>fcfs先来先服务</li></ol><h2 id="第四章-串"><a href="#第四章-串" class="headerlink" title="第四章 串"></a>第四章 串</h2><ol><li>串（逻辑结构）特殊的线性表（子串，主串，字符的位置，子串的位置，空串）</li><li>特殊的线性表（内容类型，操作对象是子串）</li><li>操作（赋值strAssign，复制atrCopy，判空strEmpty，串长strLength，清空ClearString，销毁DestroyString，连结Concat，获得子串subString，定位子串Index，比较strCompare）</li><li>顺序串{静态struct String{char ch[];int length};动态struct String{char * ch;int length;}; ）</li><li>链串（struct StringNode{char ch[4]; StringNode * next;};）</li><li>模式匹配（定位）子串+比较O(mn)</li><li>KMP算法（手算，不匹配将新位置写成’？’右移子串直到可能匹配）j=0，j++，i++。（机算，next数组，要求的位之前的子串对其，右移到第一次对齐（前缀和后缀对齐的位数+1）。next[1]=0,next[2]=1）</li><li>nextval如果next指向的位和这一位相同，则赋值成那一位的next。</li></ol><h2 id="第五章-树"><a href="#第五章-树" class="headerlink" title="第五章 树"></a>第五章 树</h2><ol><li>串（逻辑结构）特殊的线性表（子串，主串，字符的位置，子串的位置，空串）</li><li>特殊的线</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>考研</category>
+      
+      <category>专业课</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>考研</tag>
+      
+      <tag>数据结构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>考研数学一笔记整理---概率篇</title>
+    <link href="/2020/11/22/2020-11-15-%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E4%B8%80%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86---%E6%A6%82%E7%8E%87%E7%AF%87/"/>
+    <url>/2020/11/22/2020-11-15-%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6%E4%B8%80%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86---%E6%A6%82%E7%8E%87%E7%AF%87/</url>
+    
+    <content type="html"><![CDATA[<h1 id="考研数学一笔记整理—概率篇"><a href="#考研数学一笔记整理—概率篇" class="headerlink" title="考研数学一笔记整理—概率篇"></a>考研数学一笔记整理—概率篇</h1><p><em>食用方式：快速回顾全书的所有基础知识内容，回顾不起来的内容看书。</em></p><p><em>和高数不同，知识点较散</em></p><p>*参考图书：宋浩基础课</p><h2 id="第一章-随机事件"><a href="#第一章-随机事件" class="headerlink" title="第一章 随机事件"></a>第一章 随机事件</h2><ol><li>定义（实验，基本事件，复合事件，必然事件，不可能事件，样本空间，样本点）</li><li>事件的关系（包含，属于，相等，并，交，差，反，互不相容，对立，完备事件组）</li><li>无限可列（自然数，整数，有理数）</li><li>运算律（交换，结合，分配，长杠变短杠开口换方向）</li><li>概率性质（（规范）全为1，空为0，（非负）0&lt;=P&lt;=1，有限可加，取反=1-p，完备的和为1）</li><li>古典概型（有限点，等可能，P=A点数/总点数）常用取反法，排列组合（不重复Pnm，重复n^m，组合Cnm）</li><li>几何概型（线段，平面，立体）</li><li>频率（ω=m/n）</li><li>PA-B=PA-PAB，PA+B=PA+PB-PAB，PA+B+C=PA+PB+PC-PAB-PAC-PBC+PABC</li><li>条件概率（PA|B=PAB/PB）</li><li>乘法公式PAB=PA|B PB，全概率公式PB=PB|A1+PB|A2+PB|A3….（完备事件组），贝叶斯公式（执果索因）PAi|B=PAiB/PB=PB|Ai PAi/全概率</li><li>独立性（PA|B=PA，PAB=PAPB）</li><li>独立性质（Φ和Ω和任何事件都独立，AB独立则他们的非也独立，概率为0或1也和任意独立）</li><li>伯努利模型（独立两个结果n重实验）Pn(k)=Cknpk(1-p)n-k</li></ol><h2 id="第二章-随机变量"><a href="#第二章-随机变量" class="headerlink" title="第二章 随机变量"></a>第二章 随机变量</h2><ol><li>离散：分布，分布表</li><li>连续：密度函数（&gt;=0，积分为1，单点概率为0，意义为一个关于x的微分），分布函数（[0,1]，不减，右连续，F(+∞)=1，F(-∞)=0）</li><li>0-1分布，二项分布</li><li>几何分布（首中即停止）G(p)</li><li>泊松分布P(λ)（代替二项，λ=np）λk/k！e-λ</li><li>超几何分布(用二项代替)</li><li>均匀分布U[a,b]（f=1/b-a，F=x-a/b-a）</li><li>指数分布E(λ)（f=λe-λx，F=1-e-λx）</li><li>正态分布N(μ,σ2)（f=1/√2πσ e-(x-μ)2/2σ2）（性质：对称轴，最值，拐点一个σ的地方）</li><li>随机变量函数分布（先写FY，写成X形式，写成积分形式，求导得到fY）</li></ol><h2 id="第三章-多维随机变量"><a href="#第三章-多维随机变量" class="headerlink" title="第三章 多维随机变量"></a>第三章 多维随机变量</h2><p>1. </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>考研</category>
+      
+      <category>数学</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>考研</tag>
+      
+      <tag>数学</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>反省--和朋友倾诉</title>
     <link href="/2020/11/21/2020-11-21-%E5%8F%8D%E7%9C%81--%E5%92%8C%E6%9C%8B%E5%8F%8B%E5%80%BE%E8%AF%89/"/>
     <url>/2020/11/21/2020-11-21-%E5%8F%8D%E7%9C%81--%E5%92%8C%E6%9C%8B%E5%8F%8B%E5%80%BE%E8%AF%89/</url>
