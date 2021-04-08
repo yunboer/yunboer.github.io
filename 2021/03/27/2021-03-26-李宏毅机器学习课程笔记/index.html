@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>李宏毅机器学习课程笔记 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Yunboer</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/banner1.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-03-27 00:18" pubdate>
+        2021年3月27日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      29
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">李宏毅机器学习课程笔记</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><ol>
+<li>“机器学习就是自动找函数。”：</li>
+</ol>
+<p>​                    <strong>例如</strong> <em>语音辨识，输入语音，输出文字。</em></p>
+<p>​                                <em>图像识别，输入图片，输出tag</em></p>
+<p>​                                <em>阿法狗，输入棋局，输出坐标</em></p>
+<ol start="2">
+<li>找什么样的函数？<strong>例如</strong> <em>regression（输出数值），binary classification（二分），multi-class classification（多分类），generation（输出复杂的信息）</em></li>
+<li>如何告诉机器要找的函数？<strong>例如</strong> <em>supervised learning（有label的数据+函数的loss用于判断函数好不好），reinforcement learning（阿法狗下了很多步骤之后赢了获得reward，自行判断哪一步应该怎么下），unsupervised learning（给很多data，没有目标，比如分类问题）</em></li>
+<li>机器如何找出要找的函数？（a.）network architecture <strong>例如</strong> <em>给出函数范围（linear线性，neural network神经网络（RNN，CNN））</em>(b.)找出最优函数<strong>例如</strong> <em>gradient descent梯度下降</em> </li>
+<li>前沿研究？Explainable AI（说明输出结果的原因）、Adversarial Attack（恶意攻击系统，加入针对AI的干扰）、Net Compression（模型太大，要将模型缩小）、Anomaly Detection（AI知道：我不知道）、Domain Adversarial Learning（训练集和测试集不同如何处理）、Meta Learning（学习如何学习，学习写程序算法的能力）、Life-long Learning（终身学习）</li>
+</ol>
+<h1 id="python环境"><a href="#python环境" class="headerlink" title="python环境"></a>python环境</h1><ol>
+<li>python解释器3.6.8，anaconda集成了很多库</li>
+<li>编辑器：jupyter notebook、pycharm、spyder、wingide、idle、vscode</li>
+<li>pip包管理工具：3.4后自带pip</li>
+</ol>
+<h1 id="Regression回归"><a href="#Regression回归" class="headerlink" title="Regression回归"></a>Regression回归</h1><ol>
+<li><strong>例如</strong> <em>股票预测（股票未来信息=f(股票历史信息)），无人车（方向盘角度=f（周围环境信息）），推荐系统（可能性=f（使用者A，商品B））</em></li>
+<li>预测宝可梦cp值，进化后cp值=f（宝可梦类型，hp，体重，身高）</li>
+<li>第一步：<em>model： y=b+w \</em> Xcp. (linear，x是feature）*</li>
+<li>第二步：上标表示一个元素，下标表示元素中的内容，头顶尖尖表示预测值；定义一个loss function（输入是一个待测模型，输出模型的不好程度），<em>L（f）=L（b，w）</em>，简单定义为误差的平方和。</li>
+<li>第三步：找到让L最低的函数，Gradient Descent（梯度下降法），找微分然后根据微分的大小调节参数，变化量=-η*dL/dw（w是参数），只能找到local optimal（局部最优，当然线性回归没有局部最优）。两个参数就是分别求两个偏微分即可。梯度是一个向量（就是偏导组成的向量）。</li>
+<li>第四步：training data和testing data，复杂的式子可能会overfitting。</li>
+<li>第五步：Regularization（正则化），L=误差平方+λ（参数的平方）（这里不用考虑bais（常数项））<em>让参数尽可能小，模型更加平滑，不易于overfitting</em> ，然后调节λ增加，training的误差增大，直到最小的testing误差</li>
+</ol>
+<h1 id="Basic-Concept"><a href="#Basic-Concept" class="headerlink" title="Basic Concept"></a>Basic Concept</h1><ol>
+<li>对于f的估计就是一个随机变量的估计，误差有两个来源</li>
+<li>调节error来源：来自”bias（是否有偏）”或者来自”variance（方差）”</li>
+<li>随机变量的平均值和期望是unbiased（无偏估计）</li>
+<li>在regression回归中，f模型越简单，variance误差越小。</li>
+<li>如果真实的model比较复杂，则简单的模型一定有bias，取复杂度越高bias越小。</li>
+<li>也就是单次试验来说，复杂的model可能会偏差较大，但是多次试验的平均model是接近真实的。这是由于简单的model函数可取区域比较小，可能就不包含target。。</li>
+<li>复杂的函数误差大：overfitting（原因：variance；表现：testing误差大；方案：增大数据量）；简单的函数误差大underfitting（原因bias；表现training误差大；方案：修改model）</li>
+<li>regularization：变平滑，变小variance误差，伤害bias。。</li>
+<li>只考虑当前的testing set，通过当前的testing set评判model好坏，可能会不是真实的最优。</li>
+<li>方案1：training set分成两个组：一个training；一个validation选择好的model（只是选择model，不确定参数）；再用全部的training set训练；最后用testing得到error才是真实error。</li>
+<li>其实一般人都会根据testing调节函数，这样结果一般不好，但是方便发paper。</li>
+<li>方案2：training set分成三个组：分别取两个training一个validation，求每个model的平均error，再选定model</li>
+</ol>
+<h1 id="Gradient-Descent（梯度下降法）"><a href="#Gradient-Descent（梯度下降法）" class="headerlink" title="Gradient Descent（梯度下降法）"></a>Gradient Descent（梯度下降法）</h1><ol>
+<li>L是loss function</li>
+<li>首先选择一组起始参数θ，计算偏微分，原参数减去偏微分乘η（一个参数learning rate）</li>
+<li>反复减去这个偏差（梯度下降）<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210330211053855.png" srcset="/img/loading.gif" alt="image-20210330211053855"></li>
+<li>learning rate需要谨慎调节，右图是随着梯度下降和loss值大小的趋势图，最好的情况是调节到红色的线<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210330211453089.png" srcset="/img/loading.gif" alt="image-20210330211453089"></li>
+<li>learning rate一开始大，后来变小：adagrad，其中w是参数，η是learning rate（每次都变），σ是一个调节learning rate的参数（反映了二次微分，而二次微分可以解决不同参数距离对比问题），g是偏微分<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210330212240146.png" srcset="/img/loading.gif" alt="image-20210330212240146"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210330211946036.png" srcset="/img/loading.gif" alt="image-20210330211946036"></li>
+<li>stochastic gradient descent：选一个example的loss，依次把所有example都下降完（右图，一次走20步，左图一次走一步）。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210331095529131.png" srcset="/img/loading.gif" alt="image-20210331095529131"></li>
+<li>feature scaling（特征的范围化成一致）<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210331100127722.png" srcset="/img/loading.gif" alt="image-20210331100127722"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210331100353725.png" srcset="/img/loading.gif" alt="image-20210331100353725"></li>
+<li>限制：local minima，微分是0不一定是极值。</li>
+</ol>
+<h1 id="New-Optimizers-for-deep-learning（深度学习优化算法（pass））"><a href="#New-Optimizers-for-deep-learning（深度学习优化算法（pass））" class="headerlink" title="New Optimizers for deep learning（深度学习优化算法（pass））"></a>New Optimizers for deep learning（深度学习优化算法（pass））</h1><ol>
+<li>L是loss</li>
+</ol>
+<h1 id="Classification（分类）"><a href="#Classification（分类）" class="headerlink" title="Classification（分类）"></a>Classification（分类）</h1><ol>
+<li>用回归代替分类（二分类为例）：分类1是1，分类2是-1</li>
+<li>如果直接将分类问题线性化，出现问题<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210331232423866.png" srcset="/img/loading.gif" alt="image-20210331232423866"></li>
+<li>解决方案1：修改线性回归的loss函数，直接改成预测分类错误的次数。不可以用梯度下降法（用perceptron或者svm求解最佳模型）</li>
+<li>解决方案2：Generative Model（生成模型）使用贝叶斯公式<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210331233945823.png" srcset="/img/loading.gif" alt="image-20210331233945823"></li>
+<li>需要计算4个概率：计算两个PC在数据集中直接用频率做。</li>
+<li>假设水系神奇宝贝的防御和特防满足一个gaussian distribution（高斯分布也就是正态分布），根据原来的training data用Maximum Likelihood（求出一个得到全部 training data概率最高的分布函数（极大似然估计））求出分布函数，就可以算出抽一个水系正好是新宝可梦的概率</li>
+<li>问题就解决了<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401090706144.png" srcset="/img/loading.gif" alt="image-20210401090706144"></li>
+<li>按照概率0.5划线<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401091146912.png" srcset="/img/loading.gif" alt="image-20210401091146912"></li>
+<li>Mofifying Model：强制两个分布的方差相同，分界线变成直线<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401092555884.png" srcset="/img/loading.gif" alt="image-20210401092555884"></li>
+<li>分类三步走：model是一个概率函数，0.5为分界线；training就是找概率分布的参数（极大似然）；找到最好的函数</li>
+<li>其实分布可以自己选择决定的：例如Naive Bayes Classifier朴素贝叶斯（假设高斯分布都是独立的，也就是各个feature相互独立）</li>
+<li>这就是sigmoid函数，全体起立！<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401094015797.png" srcset="/img/loading.gif" alt="image-20210401094015797"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401094825716.png" srcset="/img/loading.gif" alt="image-20210401094825716"></li>
+</ol>
+<h1 id="Logistic-Regression（Logistic回归）"><a href="#Logistic-Regression（Logistic回归）" class="headerlink" title="Logistic Regression（Logistic回归）"></a>Logistic Regression（Logistic回归）</h1><ol>
+<li>前一节推导sigmoid函数就是几率的函数（值域是0到1）。</li>
+<li>z是一个线性的函数z=wx+b</li>
+<li>training是根据sigmoid函数产生，求某个w和b产生这些training data的概率，极大似然估计。</li>
+<li>求L(w,b)=f(x1)f(x2)(1-f(x3))…最大值也就是求-lnL(w,b)最小值，变成加法，这里将分类数据化（图中有一处错：110，不是101）。 <img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401105753442.png" srcset="/img/loading.gif" alt="image-20210401105753442"></li>
+<li>这就是Loss Function，这是training的过程。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401110155200.png" srcset="/img/loading.gif" alt="image-20210401110155200"></li>
+<li>接下来，gradient descent和linear公式一样<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401112732679.png" srcset="/img/loading.gif" alt="image-20210401112732679"></li>
+<li>不可以使用square error<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401113142281.png" srcset="/img/loading.gif" alt="image-20210401113142281"></li>
+<li>Discriminative判别模型（Logistic） v.s. Generative生成模型（Gaussian）其实他们的model一模一样，都是w和b的参数。找到的最优解不同，Discriminative在data多时更好，Generative在data少的时候能赢。</li>
+<li>多个class情况：每个class一个z<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401155112327.png" srcset="/img/loading.gif" alt="image-20210401155112327"></li>
+<li>Limitation of Logistic Regression：logistic的缺陷，可以用Feature Transformation空间转换。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401160515897.png" srcset="/img/loading.gif" alt="image-20210401160515897">这是人工的算法，如果想要机器自己产生，则可以用Logistic叠加，就是Neural Network<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401161456492.png" srcset="/img/loading.gif" alt="image-20210401161456492"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210401161721537.png" srcset="/img/loading.gif" alt="image-20210401161721537"></li>
+</ol>
+<h1 id="Ensemble（集成学习）"><a href="#Ensemble（集成学习）" class="headerlink" title="Ensemble（集成学习）"></a>Ensemble（集成学习）</h1><h2 id="bagging"><a href="#bagging" class="headerlink" title="bagging"></a>bagging</h2><ol>
+<li><p>不同模型的输出平均，得到合适的模型。</p>
+</li>
+<li><p>有N个training data，每次取N’（一般就是N，有放回抽取）个data组成一个新的data set，对于这几个data set做learning获得多个模型，最后在testing data上做平均或者投票。</p>
+</li>
+<li><p>model复杂，担心overfitting做bagging（例如decision tree）</p>
+</li>
+<li><p>decision tree：根据输入建立一棵树，最后得到分类结果（几个分支，什么时候停止分支，什么标准来做分支，分支条件有哪些），这种方法很容易overfit，如果层数很深，可以让training data到100%正确。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210402093301795.png" srcset="/img/loading.gif" alt="image-20210402093301795"></p>
+</li>
+<li><p>Random Forest：Decision Tree容易overfitting，传统的bagging每棵树都差不太多，改善效果不明显。在每次产生一棵Decision Tree的时候都随机决定哪些faeture或者问题是不可以用的。在投票就是Random Forest。</p>
+</li>
+<li><p>Bagging的validation可以用Out-of-bag，可以不把data切分成training set和validation set，可以把没有用到某个data的modelbagging一下，然后用这个data去test他。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210402094947335.png" srcset="/img/loading.gif" alt="image-20210402094947335"></p>
+</li>
+</ol>
+<h2 id="boosting"><a href="#boosting" class="headerlink" title="boosting"></a>boosting</h2><ol>
+<li>如果有一个模型可以达到50%以上正确率的分类器，boosting可以达到100%</li>
+<li>首先找一个classifier</li>
+</ol>
+<h1 id="Deep-Learning（深度学习）Neural-Network"><a href="#Deep-Learning（深度学习）Neural-Network" class="headerlink" title="Deep Learning（深度学习）Neural Network"></a>Deep Learning（深度学习）Neural Network</h1><ol>
+<li>1958Percepron（linear  model），<em>1969Perceptron的局限（卡车坦克亮度）</em>，1980sMulti-layer perceptron（多个接在一起），1986Backpropagation（超过3layer没好的结果），1989 <em>1layer足够任何函数（Multi-layer perceptron（Neural Networks）是脏话，SVM火了）</em>，2006 RBM initialization 打破僵局，石头汤的石头（改名deep learning，让大家重新拾起兴趣），2009GPU（train一次一周，用GPU几个小时），2011（speech recognition），ILSVRC image competition（2012年8层16.4，2014年19层7.3，2014年22层6.7，2015年152层3.57（特殊的网络结构））</li>
+<li>Deep learning三步走：1、定义函数集合（Neural Network结构） 2、评价函数优劣 3、找到最佳函数</li>
+<li>定义函数Neuron，Fully Connect Feedforward Network。Deep是指有很多级的layer（3层以上或者8层以上）<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408131346222.png" srcset="/img/loading.gif" alt="image-20210408131346222"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408151529641.png" srcset="/img/loading.gif" alt="image-20210408151529641"></li>
+<li>Matrix Operation矩阵运算+sigmoid，最后一层换维度（Hidden Layer和Output Layer）。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408152601146.png" srcset="/img/loading.gif" alt="image-20210408152601146"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408152848368.png" srcset="/img/loading.gif" alt="image-20210408152848368"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408153424107.png" srcset="/img/loading.gif" alt="image-20210408153424107"></li>
+<li>例如256-10<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408153553528.png" srcset="/img/loading.gif" alt="image-20210408153553528"></li>
+<li>如何确定层数和每一层的原子数？（经验和直觉）（可以机器自动构建structure）</li>
+<li>Deep Learning 是把问题转换成建立函数结构（语音辨识、影像辨识、NLP）</li>
+<li>有其他的结构（例如Cinvolutional Neural Network CNN）</li>
+<li>决定参数的好坏：<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408154829293.png" srcset="/img/loading.gif" alt="image-20210408154829293"></li>
+<li>用Gradient Descent</li>
+</ol>
+<h1 id="Gradient-Descent-in-Deep-Learning（Backpropagation）"><a href="#Gradient-Descent-in-Deep-Learning（Backpropagation）" class="headerlink" title="Gradient Descent in Deep Learning（Backpropagation）"></a>Gradient Descent in Deep Learning（Backpropagation）</h1><ol>
+<li>Chain Rule（链式求导法则）</li>
+<li><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408160931249.png" srcset="/img/loading.gif" alt="image-20210408160931249"></li>
+<li>每层一递归。。。sigmoid求导是固定的，所以是另一个类似Neuron的东西。<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408161528723.png" srcset="/img/loading.gif" alt="image-20210408161528723"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408161915214.png" srcset="/img/loading.gif" alt="image-20210408161915214"></li>
+<li>倒着算，并且记录一路的微分，就可以算出上一层微分（Backward Pass）<img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408162538839.png" srcset="/img/loading.gif" alt="image-20210408162538839"><img src="C:\Users\syx\AppData\Roaming\Typora\typora-user-images\image-20210408162634855.png" srcset="/img/loading.gif" alt="image-20210408162634855"></li>
+</ol>
+<h1 id="Tips-of-Deep-Learning"><a href="#Tips-of-Deep-Learning" class="headerlink" title="Tips of Deep Learning"></a>Tips of Deep Learning</h1><ol>
+<li>Chain Ru</li>
+</ol>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/12/20/2020-12-20-%E8%80%83%E7%A0%94%E5%A4%A7%E4%B8%B2%E7%83%A72/">
+                        <span class="hidden-mobile">考研大串烧2</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    function loadValine() {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "yYSn8TcJpgmpETwRJG04tkey-gzGzoHsz",
+          app_key: "GQvGRTXD7C1AcI3vCANJcpLf",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "mm",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    }
+    waitElementVisible('vcomments', loadValine);
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "李宏毅机器学习课程笔记&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
