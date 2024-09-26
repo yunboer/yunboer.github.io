@@ -1,0 +1,11 @@
+.app{
+    overflow: auto;
+    .head{
+        height: 45px;
+        position: fixed;
+        width: 100vw;
+    }
+    .main{
+        margin-top: 45px;
+    }
+}

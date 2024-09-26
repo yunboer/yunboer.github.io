@@ -1,0 +1,25 @@
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    background-color: #24272d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-left, .nav-right{
+        // background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            margin: 0px 10px;
+            font-size: 20px;
+            color: #7d7f81;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            &.active{
+                color: white;
+            }
+        }
+    }
+}
