@@ -19,14 +19,13 @@ export default function Main() {
           <TypeBlock text={"Love life more than the meaning of it."} />
           <Card>
             <div className="flex flex-col md:flex-row items-center md:items-start">
-              <div className="relative top-0 left-0 w-24 h-24 mr-4 mb-4 overflow-hidden">
-                <Image
-                  src="/images/profile.jpg"
-                  alt="profile"
-                  className="rounded-lg"
-                  fill
-                />
-              </div>
+              <Image
+                src="/images/profile.jpg"
+                alt="profile"
+                className="rounded-lg mx-4 mb-4"
+                width={150}
+                height={150}
+              />
               <div>
                 <h1 className="text-2xl font-bold">yunboer | Yuxiang Sun</h1>
                 <p>BS:ECUST MS:SJTU</p>
@@ -59,7 +58,6 @@ export default function Main() {
             <TechIcon tech="latex" />
           </div>
         </Card>
-        
       </div>
     </div>
   );
