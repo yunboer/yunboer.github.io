@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+import withMDX from "@next/mdx";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  output: 'export' as 'export', // 强制将 output 类型指定为 'export'
+  images: {
+    unoptimized: true,
+  },
 };
 
-export default nextConfig;
+export default withMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+})(nextConfig);
