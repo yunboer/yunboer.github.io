@@ -25,7 +25,7 @@ export default function ProjectCard({
     to: "to-gray-200",
   };
   return (
-    <div className="flex flex-row group border rounded-lg overflow-hidden">
+    <div className="flex flex-row group border-custom rounded-lg overflow-hidden">
       <div
         className={`shrink-0 w-2 group-hover:w-3 bg-gradient-to-b ${from} ${to} transition-all`}
       ></div>

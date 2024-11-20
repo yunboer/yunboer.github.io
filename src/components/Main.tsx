@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Main() {
   return (
     <div>
-      <div className="w-full md:w-[600px] min-h-screen h-auto bg-white box-border p-5">
+      <div className="w-full md:w-[600px] min-h-screen h-auto bg-white dark:bg-slate-800 box-border p-5">
         <div className="flex flex-col items-center">
           <TypeBlock text={"Love life more than the meaning of it."} />
           <Card>

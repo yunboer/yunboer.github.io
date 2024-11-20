@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .border-custom {
+    @apply border border-gray-300 dark:border-gray-700;
+  }
+}
+
 :root {
   --background: url("/images/eva-bg2.jpg");
   --foreground: #171717;
@@ -9,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: url("/images/eva-bg2.jpg");
     --foreground: #ededed;
   }
 }

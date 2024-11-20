@@ -27,7 +27,7 @@ export default function TypeBlock({ text }: { text: string }) {
     };
   }, [text]);
   return (
-    <div className="border rounded-lg mb-2 inline-block px-2 py-1 font-medium">
+    <div className="border-custom rounded-lg mb-2 inline-block px-2 py-1 font-medium">
       {showingText}
     </div>
   );
