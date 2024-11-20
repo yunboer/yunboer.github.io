@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import React from "react";
 import Card from "./Card";
@@ -7,6 +5,7 @@ import TechIcon from "./TechIcon";
 import TypeBlock from "./TypeBlock";
 import { Metadata } from "next";
 import Tag from "./Tag";
+import ProjectCard from "./ProjectCard";
 
 export const metadata: Metadata = {
   title: "yunboer | 爱生活胜过爱生活的意义。",
@@ -59,6 +58,49 @@ export default function Main() {
             <TechIcon tech="md" />
             <TechIcon tech="latex" />
           </div>
+        </Card>
+        <Card>
+          <h1 className="font-bold text-2xl pb-2">Projects</h1>
+          <div className="grid grid-cols-1 gap-4">
+            <ProjectCard
+              title="test"
+              color="blue"
+              description="test"
+              techs={["a", "b"]}
+              link={"www.baidu.com"}
+            />
+            <ProjectCard
+              title="test"
+              color="red"
+              description="test"
+              techs={["a", "b"]}
+              link={"www.baidu.com"}
+            />
+            <ProjectCard
+              title="test"
+              color="green"
+              description="test"
+              techs={["a", "b"]}
+              link={"www.baidu.com"}
+            />
+            <ProjectCard
+              title="test"
+              color="purple"
+              description="test"
+              techs={["a", "b"]}
+              link={"www.baidu.com"}
+            />
+          </div>
+        </Card>
+        <Card>
+          <h1 className="font-bold text-2xl pb-2">Blogs</h1>
+          <ProjectCard
+            title="test"
+            color="blue"
+            description="test"
+            techs={["a", "b"]}
+            link={"https://www.baidu.com"}
+          />
         </Card>
       </div>
     </div>
