@@ -5,7 +5,7 @@ import TechIcon from "./TechIcon";
 import TypeBlock from "./TypeBlock";
 import { Metadata } from "next";
 import Tag from "./Tag";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./RainbowCard";
 
 export const metadata: Metadata = {
   title: "yunboer | 爱生活胜过爱生活的意义。",

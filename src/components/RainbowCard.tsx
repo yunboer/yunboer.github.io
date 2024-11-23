@@ -1,7 +1,7 @@
 import React from "react";
 import Tag from "./Tag";
 
-export default function ProjectCard({
+export default function RianbowCard({
   color,
   title,
   description,
