@@ -6,6 +6,8 @@ import TypeBlock from "./TypeBlock";
 import { Metadata } from "next";
 import Tag from "./Tag";
 import ProjectCard from "./RainbowCard";
+import DarkSwitch from "./DarkSwitch";
+import InfinityScroll from './InfinityScroll';
 
 export const metadata: Metadata = {
   title: "yunboer | 爱生活胜过爱生活的意义。",
@@ -16,6 +18,7 @@ export default function Main() {
   return (
     <div>
       <div className="w-full md:w-[600px] min-h-screen h-auto bg-white dark:bg-slate-800 box-border p-5">
+        <DarkSwitch />
         <div className="flex flex-col items-center">
           <TypeBlock text={"Love life more than the meaning of it."} />
           <Card>
@@ -102,6 +105,7 @@ export default function Main() {
             link={"https://www.baidu.com"}
           />
         </Card>
+        <InfinityScroll />
       </div>
     </div>
   );
