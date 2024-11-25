@@ -1,5 +1,4 @@
 import "./globals.css";
-import DarkSwitch from '../components/DarkSwitch';
 
 export default function RootLayout({
   children,
